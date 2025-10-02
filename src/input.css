@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  /* Your custom theme styles here */
+
+  --color-trinidad-50: #fff6ed;
+  --color-trinidad-100: #ffebd5;
+  --color-trinidad-200: #fed3aa;
+  --color-trinidad-300: #fdb474;
+  --color-trinidad-400: #fb8a3c;
+  --color-trinidad-500: #f86917;
+  --color-trinidad-600: #df4b0c;
+  --color-trinidad-700: #c2390c;
+  --color-trinidad-800: #9a2e12;
+  --color-trinidad-900: #7c2812;
+  --color-trinidad-950: #431107;
+  
+}
