@@ -1,5 +1,4 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -70,6 +69,7 @@
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<!-- Navigation Bar & Hero Section -->
 <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
   <header class="absolute inset-x-0 top-0 z-50">
     <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
@@ -103,7 +103,7 @@
           <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
+                <span class="sr-only">Youth To The Nations</span>
                 <img src="image/yttn_logo.png" alt="" class="h-10 w-auto" />
               </a>
               <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
@@ -137,13 +137,13 @@
       <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#121d9b] to-[#30f385] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"></div>
     </div>
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-      <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+      <div class="hidden sm:mb-8 sm:flex sm:justify-center opacity-0 translate-y-4" id="hero-banner">
         <div class="relative rounded-full px-3 py-1 text-sm/6 text-white ring-1 ring-white/10 hover:ring-white/20">
           Get ready for the next big thing! <a href="#" class="font-semibold text-pink-200"><span aria-hidden="true" class="absolute inset-0"></span>Read more <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
-      <div class="text-center"></div>
-        <h1 class="text-5xl font-bold tracking-tight text-balance text-white sm:text-7xl">
+      <div class="text-left opacity-0 translate-y-8" id="hero-content">
+        <h1 class="text-5xl font-bold tracking-tight text-balance text-white sm:text-7xl max-w-xl">
           Ignite Your Spark. <br> Change Your World.
         </h1>
 
@@ -152,6 +152,7 @@
           <a href="#" class="rounded-md bg-purple-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-purple-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500">Join mobilisation</a>
           <a href="#" class="text-sm font-semibold text-white">Become a champion <span aria-hidden="true">→</span></a>
         </div>
+      </div>
       </div>
     </div>
     <div aria-hidden="true" class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
@@ -164,39 +165,41 @@
 
 <section class="bg-background-light py-20 dark:bg-background-dark sm:py-28">
   <div class="container mx-auto px-4 relative z-10">
-    <div class="mx-auto max-w-2xl bg-white/80 dark:bg-slate-900/80 rounded-3xl shadow-2xl backdrop-blur-xl p-10 text-center">
-      <h3 class="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-4">Next Healing Streams Service</h3>
-      <p class="text-lg text-slate-700 dark:text-slate-300 mb-8">Experience a powerful time of worship and ministry.<br class="hidden sm:inline">Don't miss out!</p>
-      <div class="flex flex-wrap justify-center gap-6 mb-10">
-        <div class="flex flex-col items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl shadow-lg px-6 py-4 min-w-[90px]">
-          <span class="text-6xl font-extrabold text-white drop-shadow">12</span>
-          <span class="mt-2 text-base font-semibold uppercase tracking-widest text-white/80">Days</span>
+    <div id="countdown-section" class="mx-auto max-w-2xl bg-white/80 dark:bg-slate-900/80 rounded-3xl shadow-2xl backdrop-blur-xl p-10 text-center opacity-0 translate-y-8 transition-all duration-1000 ease-out">
+      <div class="mb-9">
+        <h3 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-4 drop-shadow-lg sm:text-3xl">Next Healing Streams Service</h3>
+        <p class="text-base font-medium text-slate-700">Experience a powerful time of worship and ministry.<br class="hidden sm:inline"> Don't miss out!</p>
+      </div>
+      <div class="countdown grid grid-cols-4 gap-x-5 text-2xl font-black leading-tight xs:text-2xl sm:gap-x-10 sm:text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <div class="text-center">
+          <span class="mb-3 flex h-[60px] min-w-[45px] items-center justify-center rounded bg-purple-1 px-2 xs:min-w-[60px] sm:h-[70px] sm:min-w-[80px]" id="days">03</span>
+          <span class="block text-xs font-medium xs:text-sm sm:text-base text-slate-900">Days</span>
         </div>
-        <div class="flex flex-col items-center justify-center bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl shadow-lg px-6 py-4 min-w-[90px]">
-          <span class="text-6xl font-extrabold text-white drop-shadow">08</span>
-          <span class="mt-2 text-base font-semibold uppercase tracking-widest text-white/80">Hours</span>
+        <div class="text-center">
+          <span class="mb-3 flex h-[60px] min-w-[45px] items-center justify-center rounded bg-purple-1 px-2 xs:min-w-[60px] sm:h-[70px] sm:min-w-[80px]" id="hours">16</span>
+          <span class="block text-xs font-medium xs:text-sm sm:text-base text-slate-900">Hours</span>
         </div>
-        <div class="flex flex-col items-center justify-center bg-gradient-to-br from-pink-500 to-indigo-500 rounded-2xl shadow-lg px-6 py-4 min-w-[90px]">
-          <span class="text-6xl font-extrabold text-white drop-shadow">34</span>
-          <span class="mt-2 text-base font-semibold uppercase tracking-widest text-white/80">Minutes</span>
+        <div class="text-center">
+          <span class="mb-3 flex h-[60px] min-w-[45px] items-center justify-center rounded bg-purple-1 px-2 xs:min-w-[60px] sm:h-[70px] sm:min-w-[80px]" id="minutes">16</span>
+          <span class="block text-xs font-medium xs:text-sm sm:text-base text-slate-900">Minutes</span>
         </div>
-        <div class="flex flex-col items-center justify-center bg-gradient-to-br from-indigo-500 to-pink-500 rounded-2xl shadow-lg px-6 py-4 min-w-[90px]">
-          <span class="text-6xl font-extrabold text-white drop-shadow">56</span>
-          <span class="mt-2 text-base font-semibold uppercase tracking-widest text-white/80">Seconds</span>
+        <div class="text-center">
+          <span class="mb-3 flex h-[60px] min-w-[45px] items-center justify-center rounded bg-purple-1 px-2 xs:min-w-[60px] sm:h-[70px] sm:min-w-[80px] seconds" id="seconds">51</span>
+          <span class="block text-xs font-medium xs:text-sm sm:text-base text-slate-900">Seconds</span>
         </div>
       </div>
-      <a href="#" class="inline-block rounded-full bg-gradient-to-r from-pink-500 to-indigo-500 px-12 py-4 text-lg font-bold text-white shadow-xl hover:scale-105 transition-transform">Register Now!</a>
+      <a href="#" class="inline-block rounded-full bg-gradient-to-r from-pink-500 to-indigo-500 mt-10 px-12 py-4 text-lg font-bold text-white shadow-xl hover:scale-105 transition-transform">Register Now!</a>
     </div>
   </div>
 </section>
 
-<section class="py-16 sm:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 border-y-4 border-slate-900">
+<section class="bg-gray-100 py-20 dark:bg-background-dark sm:py-28">
   <div class="container mx-auto px-4">
-    <div class="text-center mb-12">
-      <h2 class="text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-4 drop-shadow-lg">Our <span class="text-gradient-primary">C.O.M.P.L.E.T.E.</span> Values</h2>
-      <p class="mx-auto mt-4 max-w-2xl text-xl text-white dark:text-slate-300 font-medium">These are the principles that guide every single thing we do. It's who we are.</p>
+    <div id="values-header" class="text-center mb-12 opacity-0 translate-y-8 transition-all duration-1000 ease-out">
+      <h2 class="text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-4 drop-shadow-lg">Our <span>C.O.M.P.L.E.T.E.</span> Values</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-xl text-slate-700 dark:text-slate-300 font-medium">These are the principles that guide every single thing we do. It's who we are.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div id="values-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 opacity-0 translate-y-8 transition-all duration-1000 ease-out delay-300">
       <!-- Card: Compassion -->
       <div class="group flex flex-col items-center text-center gap-4 rounded-3xl bg-white/90 dark:bg-slate-900/80 p-8 shadow-2xl border border-slate-200/40 dark:border-slate-800/40 hover:scale-105 transition-transform">
         <span class="material-symbols-outlined text-6xl text-red-500 transition-transform group-hover:scale-110 drop-shadow">favorite</span>
@@ -245,105 +248,125 @@
 
 <!--Carousel section -->
 
-
 <section class="bg-zinc-50 dark:bg-gray-900 py-16 sm:py-24">
-  <div id="default-carousel" class="relative w-full max-w-4xl mx-auto" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-80 overflow-hidden rounded-lg md:h-[500px]">
-      <!-- Item 1 -->
-      <div id="default-carousel" class="relative w-full max-w-4xl mx-auto" data-carousel="slide"> 
-    <!-- Carousel wrapper -->
-    <div class="relative h-80 overflow-hidden rounded-lg md:h-[500px]">
-      <!-- Item 1 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 mx-auto h-full flex flex-col">
-          <a href="#">
-            <img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn2.png" alt="From Lost to Leader" />
-          </a>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <a href="#">
-              <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">From Lost to Leader</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">
-              "YTTN gave me a family and a purpose. I never knew I could make a difference."
-            </p>
+  <div class="text-center opacity-0 translate-y-8 transition-all duration-1000 ease-out" id="carousel-header">
+    <h2 class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-4xl font-extrabold tracking-tight text-text-light dark:text-text-dark sm:text-5xl">Real Stories, Real Impact</h2>
+    <p class="p-3 mx-auto mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-400">Lives are being changed. Hear from the youth themselves.</p>
+  </div>
+  <div class="relative w-full max-w-6xl mx-auto px-4 md:px-8">
+    <div id="tailwind-carousel" class="overflow-hidden opacity-0 translate-x-full transition-all duration-1000 ease-out delay-500">
+      <div id="tailwind-carousel-track" class="flex transition-transform duration-700 ease-in-out">
+        <!-- Slide 1: Cards 1,2,3 -->
+        <div class="w-full flex flex-col md:flex-row gap-6 justify-center items-stretch shrink-0">
+          <div class="w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn2.png" alt="From Lost to Leader" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">From Lost to Leader</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"YTTN gave me a family and a purpose. I never knew I could make a difference."</p>
+            </div>
+          </div>
+          <div class="hidden md:flex w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn3.jpg" alt="Finding My Voice" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Finding My Voice</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"I was always shy. Now, I'm confidently sharing my faith and leading others."</p>
+            </div>
+          </div>
+          <div class="hidden md:flex w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn8.jpeg" alt="A Global Family" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A Global Family</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"It's amazing to connect with young people from all over the world."</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2: Cards 4,1,2 -->
+        <div class="w-full flex flex-col md:flex-row gap-6 justify-center items-stretch shrink-0">
+          <div class="w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn7.jpeg" alt="Empowered To Lead" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Empowered To Lead</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"YTTN helped me discover my leadership potential and inspired me to guide others"</p>
+            </div>
+          </div>
+          <div class="hidden md:flex w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn2.png" alt="From Lost to Leader" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">From Lost to Leader</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"YTTN gave me a family and a purpose. I never knew I could make a difference."</p>
+            </div>
+          </div>
+          <div class="hidden md:flex w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn3.jpg" alt="Finding My Voice" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Finding My Voice</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"I was always shy. Now, I'm confidently sharing my faith and leading others."</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3: Cards 3,4,1 -->
+        <div class="w-full flex flex-col md:flex-row gap-6 justify-center items-stretch shrink-0">
+          <div class="w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn8.jpeg" alt="A Global Family" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A Global Family</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"It's amazing to connect with young people from all over the world."</p>
+            </div>
+          </div>
+          <div class="hidden md:flex w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn7.jpeg" alt="Empowered To Lead" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Empowered To Lead</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"YTTN helped me discover my leadership potential and inspired me to guide others"</p>
+            </div>
+          </div>
+          <div class="hidden md:flex w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn2.png" alt="From Lost to Leader" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">From Lost to Leader</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"YTTN gave me a family and a purpose. I never knew I could make a difference."</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 4: Cards 2,3,4 -->
+        <div class="w-full flex flex-col md:flex-row gap-6 justify-center items-stretch shrink-0">
+          <div class="w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn3.jpg" alt="Finding My Voice" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Finding My Voice</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"I was always shy. Now, I'm confidently sharing my faith and leading others."</p>
+            </div>
+          </div>
+          <div class="hidden md:flex w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn8.jpeg" alt="A Global Family" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A Global Family</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"It's amazing to connect with young people from all over the world."</p>
+            </div>
+          </div>
+          <div class="hidden md:flex w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex-1 flex-col mx-auto">
+            <a href="#"><img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn7.jpeg" alt="Empowered To Lead" /></a>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <a href="#"><h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Empowered To Lead</h5></a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">"YTTN helped me discover my leadership potential and inspired me to guide others"</p>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Item 2 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 mx-auto h-full flex flex-col">
-          <a href="#">
-            <img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn3.jpg" alt="From Lost to Leader" />
-          </a>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <a href="#">
-              <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Finding My Voice</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">
-              "I was always shy. Now, I'm confidently sharing my faith and leading others."
-            </p>
-          </div>
-        </div>
+      <!-- Carousel controls -->
+      <div class="absolute top-0 left-0 z-30 flex items-center justify-between w-full h-full">
+        <button id="prev-button" class="p-2 text-white bg-black/30 hover:bg-black/50 rounded-r-lg transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <button id="next-button" class="p-2 text-white bg-black/30 hover:bg-black/50 rounded-l-lg transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
       </div>
-      <!-- Item 3 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 mx-auto h-full flex flex-col">
-          <a href="#">
-            <img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn8.jpeg" alt="From Lost to Leader" />
-          </a>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <a href="#">
-              <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A Global Family</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">
-              "It's amazing to connect with young people from all over the world who share my passion."
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Item 4 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 mx-auto h-full flex flex-col">
-          <a href="#">
-            <img class="rounded-t-lg h-48 md:h-64 object-cover w-full" src="image/yttn7.jpeg" alt="From Lost to Leader" />
-          </a>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <a href="#">
-              <h5 class="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">From Lost to Leader</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300 flex-grow">
-              "YTTN gave me a family and a purpose. I never knew I could make a difference."
-            </p>
-          </div>
-        </div>
     </div>
-    </div>
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-        </svg>
-        <span class="sr-only">Previous</span>
-      </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-        </svg>
-        <span class="sr-only">Next</span>
-      </span>
-    </button>
   </div>
 </section>
 </main>
@@ -356,7 +379,7 @@
           <div class="mb-6 md:mb-0">
               <a href="https://youthtothenations.org/" class="flex items-center">
                   <img src="image/yttn_logo.png" class="h-8 me-3" alt="FlowBite Logo" />
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Youth To The Nations</span>
+                  <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Youth To The Nations</span>
               </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -364,10 +387,16 @@
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://herald.healingstreams.tv/" class="hover:underline">H.E.R.A.L.D</a>
+                        <a href="https://herald.healingstreams.tv/" class="hover:underline">H.E.R.A.L.D</a>
                       </li>
-                      <li>
-                          <a href="https://healingstreams.tv" class="hover:underline">Learn more</a>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">About</a>
+                      </li>
+                      <li class="mb-4"  >
+                        <a href="#" class="hover:underline">Get Involved</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">Programs</a>
                       </li>
                   </ul>
               </div>
@@ -375,10 +404,13 @@
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Instagram</a>
+                        <a href="#" class="hover:underline ">Instagram</a>
                       </li>
-                      <li>
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Kingschat</a>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">Facebook</a>
+                      </li>
+                      <li class="mb-4"  >
+                        <a href="#" class="hover:underline">Kingschat</a>
                       </li>
                   </ul>
               </div>
@@ -439,5 +471,126 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<script>
+  // Countdown Timer
+    const targetDate = new Date('2025-10-24T14:00:00+01:00');
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetDate - now;
+      if (diff > 0) {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24).toString().padStart(2, '0');
+        const minutes = Math.floor((diff / (1000 * 60)) % 60).toString().padStart(2, '0');
+        const seconds = Math.floor((diff / 1000) % 60).toString().padStart(2, '0');
+        document.getElementById('days').textContent = days;
+        document.getElementById('hours').textContent = hours;
+        document.getElementById('minutes').textContent = minutes;
+        document.getElementById('seconds').textContent = seconds;
+      } else {
+        document.querySelectorAll('.countdown span').forEach(el => el.textContent = '00');
+      }
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Carousel Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+    // Hero section animation
+    const heroBanner = document.getElementById('hero-banner');
+    const heroContent = document.getElementById('hero-content');
+    
+    // Initial hero animations with slight delay
+    setTimeout(() => {
+      heroBanner.classList.add('transition-all', 'duration-1000', 'ease-out');
+      heroBanner.classList.remove('opacity-0', 'translate-y-4');
+    }, 300);
+    
+    setTimeout(() => {
+      heroContent.classList.add('transition-all', 'duration-1000', 'ease-out');
+      heroContent.classList.remove('opacity-0', 'translate-y-8');
+    }, 600);
+
+    // Carousel functionality
+    const track = document.getElementById('tailwind-carousel-track');
+    const slides = track.children;
+    const carouselHeader = document.getElementById('carousel-header');
+    const carousel = document.getElementById('tailwind-carousel');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Add click event listeners to buttons
+    document.getElementById('next-button').addEventListener('click', nextSlide);
+    document.getElementById('prev-button').addEventListener('click', prevSlide);
+
+    // Auto-advance slides every 5 seconds
+    setInterval(nextSlide, 5000);
+
+    // Show initial slide
+    showSlide(currentSlide);
+
+    // Create Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Remove animation classes to trigger animation
+          entry.target.classList.remove('opacity-0', 'translate-y-8', 'translate-x-full');
+          
+          // If this is the carousel section, also animate its track
+          if (entry.target.id === 'carousel-header') {
+            carousel.classList.remove('opacity-0', 'translate-x-full');
+          }
+          
+          // If this is the values grid, animate all cards with stagger
+          if (entry.target.id === 'values-grid') {
+            const cards = entry.target.children;
+            Array.from(cards).forEach((card, index) => {
+              setTimeout(() => {
+                card.classList.remove('opacity-0', 'translate-y-8');
+              }, index * 100); // Stagger each card by 100ms
+            });
+          }
+          
+          // Stop observing this element
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    // Observe all animated sections
+    const animatedSections = [
+      document.getElementById('countdown-section'),
+      document.getElementById('values-header'),
+      document.getElementById('values-grid'),
+      carouselHeader
+    ];
+
+    animatedSections.forEach(section => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    // Add transition classes to value cards
+    const valueCards = document.querySelectorAll('#values-grid > div');
+    valueCards.forEach(card => {
+      card.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-700', 'ease-out');
+    });
+  });
+</script>
 </body>
 </html>
